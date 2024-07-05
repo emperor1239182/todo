@@ -1,0 +1,79 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  *{
+  box-sizing:border-box;
+  }
+  
+  #main{
+  display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction:column;
+    margin: auto;
+  }
+  #container{
+  position: relative;
+    height: 50vh;
+    width: 70%;
+    max-width: 800px; 
+    box-shadow: 4px 4px 7px grey, -4px -4px 7px grey;
+      border: 2px solid transparent;
+    border-radius: 5px;
+    border-image: linear-gradient(to right, red, blue, yellow) 1;
+  } 
+  .lists{
+    height: 45vh;
+    white-space: wrap;
+  overflow-y: scroll;
+  }
+  .flex{
+  align-self: flex-end;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 10px;
+  }
+  .subject{
+    background: linear-gradient(to right, blue, yellow, red);
+    border-radius: 3px;
+    padding: 8px;
+  }
+  #input{
+  height: 24px;
+    width: 70%;
+    margin-bottom: -5px;
+  }
+  .done{
+  width: 20%;
+    text-align: center;
+  }
+  @media only screen and (min-width: 992px) {
+    .done{
+  font-size: 40px;
+      padding: 18px;
+  }
+    #input{
+      width: 80%;
+  height: 90px;
+      margin-bottom: -15px;
+  }
+    .subject{
+  font-size: 90px;
+  }
+  }
+  @media only screen and (min-width: 600px){
+    #input{
+  height: 50px;
+      margin-bottom: -15px;
+  }
+    .done{
+  font-size: 30px;
+      padding: 0 8px;
+      width: 110px;
+  }
+    .subject{
+  font-size: 40px;
+  }
+  }
